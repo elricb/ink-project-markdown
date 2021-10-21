@@ -20,7 +20,7 @@ import {render, Text} from "ink";
 import ProjectMarkdown from "@elricb/ink-project-markdown";
 
 const Readme = () => (
-  <BoxList baseDir="project/path" suspense={<Text>Loading</Text>} />
+  <ProjectMarkdown baseDir="project/path" suspense={<Text>Loading</Text>} />
 );
 
 render(<Readme />);
@@ -36,8 +36,8 @@ import ProjectMarkdown from "@elricb/ink-project-markdown";
 /// displays readme.md in terminal from project root 
 const Readme = ({module}) => (
   module
-    ? <BoxList baseDir="project/path" filename={module} />
-    : <BoxList baseDir="project/path" />
+    ? <ProjectMarkdown baseDir="project/path" filename={module} />
+    : <ProjectMarkdown baseDir="project/path" />
 );
 
 Readme.propTypes = {
