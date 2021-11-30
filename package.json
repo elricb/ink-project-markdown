@@ -44,7 +44,6 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
     "ink": "^3.0.5",
-    "ink-markdown": "^1.0.1",
     "ink-testing-library": "^2.0.0",
     "prettier": "^2.4.1",
     "pretty-quick": "^3.1.1",
@@ -71,7 +70,9 @@
       "@babel/plugin-transform-react-jsx"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "ink-markdown": "^1.0.1"
+  },
   "bugs": {
     "url": "https://github.com/elricb/ink-project-markdown/issues"
   },
